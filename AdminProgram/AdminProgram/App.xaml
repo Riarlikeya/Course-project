@@ -1,9 +1,0 @@
-﻿<Application x:Class="AdminProgram.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:AdminProgram"
-             StartupUri="Views/Auth.xaml">
-    <Application.Resources>
-         
-    </Application.Resources>
-</Application>
