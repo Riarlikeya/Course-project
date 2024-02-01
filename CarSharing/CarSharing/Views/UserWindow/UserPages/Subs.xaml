@@ -1,0 +1,53 @@
+﻿<Page x:Class="CarSharing.Views.UserWindow.UserPages.Subs"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CarSharing.Views.UserWindow.UserPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="480"
+      Title="Subs">
+
+    <Page.Resources>
+        <Style x:Key="MenuButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#8e44ad"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF65307B"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="#8e44ad">
+            <TextBlock FontSize="32" Text="Подписка на месяц" Foreground="White" FontWeight="Bold" Margin="10"/>
+            <TextBlock FontSize="20" Foreground="White" Margin="10" TextWrapping="WrapWithOverflow" Text="До окончания срока действия подписки для тебя будет доступна фиксированная стоимость минуты на все автомобили класса Эконом и Комфорт. Больше не нужно искать самый выгодный автомобиль на карте. С подпиской все доступные в тарифе автомобили стоят одинаково и днем, и ночью."/>
+            <TextBlock FontSize="14" Foreground="White" Margin="10" FontStyle="Italic" Text="Цена: 16000р"/>
+            <Button Content="Временно недоступно" Background="#FF65307B" Margin="10" Style="{StaticResource MenuButtonStyle}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Background="#8e44ad">
+            <TextBlock FontSize="32" Text="Подписка на 7 дней" Foreground="White" FontWeight="Bold" Margin="10"/>
+            <TextBlock FontSize="20" Foreground="White" Margin="10" TextWrapping="WrapWithOverflow" Text="До окончания срока действия подписки для тебя будет доступна фиксированная стоимость минуты на все автомобили класса Эконом и Комфорт. Больше не нужно искать самый выгодный автомобиль на карте. С подпиской все доступные в тарифе автомобили стоят одинаково и днем, и ночью."/>
+            <TextBlock FontSize="14" Foreground="White" Margin="10" FontStyle="Italic" Text="Цена: 4000р"/>
+            <Button Content="Временно недоступно" Background="#FF65307B" Margin="10" Style="{StaticResource MenuButtonStyle}"/>
+        </StackPanel>
+    </Grid>
+</Page>

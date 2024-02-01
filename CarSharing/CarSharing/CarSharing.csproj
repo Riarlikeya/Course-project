@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\AdminWindow\AdminPages\CarControls\add_img.jpg" />
+    <None Remove="Views\AdminWindow\AdminPages\CarControls\Remove.png" />
+    <None Remove="Views\AdminWindow\AdminPages\UserControls\Edit.png" />
+    <None Remove="Views\AdminWindow\AdminPages\UserControls\Remove.png" />
+    <None Remove="Views\AdminWindow\Return.png" />
+    <None Remove="Views\Auth_img.jpg" />
+    <None Remove="Views\logo.png" />
+    <None Remove="Views\reg_img.jpg" />
+    <None Remove="Views\UserWindow\UserPages\MapItems\point_map.png" />
+    <None Remove="Views\UserWindow\UserPages\zoom-in.png" />
+    <None Remove="Views\UserWindow\UserPages\zoom-out.png" />
+    <None Remove="Views\UserWindow\UserPages\zoom_in.png" />
+    <None Remove="Views\UserWindow\UserPages\zoom_out.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="{215d64d2-031c-33c7-96e3-61794cd1ee61}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GMap.NET.Core" Version="2.1.7" />
+    <PackageReference Include="GMap.NET.WinPresentation" Version="2.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
+	  <PackageReference Include="SQLite.Interop" Version="1.0.0" />
+	  <PackageReference Include="SQLite.Interop.dll" Version="1.0.103" />
+	  <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>bin\Debug\net8.0-windows\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>bin\Debug\net8.0-windows\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\AdminWindow\AdminPages\CarControls\add_img.jpg" />
+    <Resource Include="Views\AdminWindow\AdminPages\CarControls\Remove.png" />
+    <Resource Include="Views\AdminWindow\AdminPages\UserControls\Edit.png" />
+    <Resource Include="Views\AdminWindow\AdminPages\UserControls\Remove.png" />
+    <Resource Include="Views\AdminWindow\Return.png" />
+    <Resource Include="Views\Auth_img.jpg" />
+    <Resource Include="Views\logo.png" />
+    <Resource Include="Views\reg_img.jpg" />
+    <Resource Include="Views\UserWindow\UserPages\MapItems\point_map.png" />
+    <Resource Include="Views\UserWindow\UserPages\zoom-in.png" />
+    <Resource Include="Views\UserWindow\UserPages\zoom-out.png" />
+  </ItemGroup>
+
+</Project>
